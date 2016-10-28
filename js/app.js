@@ -1,7 +1,14 @@
 $(function () {
 
     var nav = $('.menu');
-    var total=0;
+    var home = $('ul li:first-child');
+    
+    home.click(function(){
+        window.location.reload(true);
+    });
+    
+    
+    
     
     // SLIDER FUNCTIONS //
 
@@ -49,11 +56,9 @@ $(function () {
         
     });  /* user function - END */
     
-    var index = 0;
+
     
     /* arrows - START - goes to next user */
-    
-    
     
      
     arrow_left.on('click', function(){
@@ -121,7 +126,7 @@ $(function () {
         
          
         
-    }); 
+    });  /* arrows - END - goes to next user */
     
     
     

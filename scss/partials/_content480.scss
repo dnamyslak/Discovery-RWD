@@ -1,0 +1,346 @@
+@import '_colors.scss';
+
+
+@media only screen and (min-width: 480px) and (max-width: 799px) {
+
+.container-header, .container-users, .container-footer {
+    width: 480px;
+    height: auto;
+}
+    
+.container {
+    width: 1000px;
+    height: auto;
+}
+    
+
+
+
+/* HEADER */
+
+
+    header {
+        z-index: 1000;
+        display: block;
+        width: 100%;
+        height: 75px;
+        background-color: $main-color;
+        color: $text-color;
+        
+        .logo {
+            display: inline-block;
+            margin: 10px;
+            background-image: url(#{$images-path}/logo480.png);
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 45px;
+        }
+        
+        nav {
+            display: inline-block;
+            float: right;
+            margin-right: 17px;
+            margin-top: 5px;
+
+            .fb {
+                display: inline-block;
+                margin-right: 10px;
+                margin-left: 10px;
+                width: 22px;
+                height: 22px;
+                cursor: pointer;
+            }
+
+            ul {
+                display: none;
+                list-style-type: none;
+                background-color: black;
+                padding: 10px;
+                li {
+                    z-index: 5;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0px 0px;
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                
+                li:hover {
+                    color: $gold-color;
+                }
+
+            }
+
+            .button {
+                    display: inline-block;
+                    margin: auto 10px;
+                    font-size: 40px;
+                    cursor: pointer;
+                }
+            }
+    }  /* END of HEADER  */
+
+
+/* SLIDER */
+    
+#slider {
+    display: none;
+    
+}
+    
+/* GALLERY */    
+
+#gallery {
+    width: 100%;
+    min-height:  500px;
+    height: auto;
+    background-image: url(#{$images-path}/background.jpg);
+    background-repeat: no-repeat;
+    
+        
+    .gallery-wrapper {
+        width: 100%;
+        height: 135px;
+        display: inline-block;
+        margin-top: 20px;
+        overflow: hidden;
+        
+        .gallery-user {
+            display: block;
+            width: 50%;
+            float: left;
+            width: 132px;
+            height: 132px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        } /* .gallery-user */    
+            
+        
+        .gallery-title {
+            display: block;
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            
+            h4 {
+                    z-index: 2;
+                    color: $user-color;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                }
+                /* h4 */
+            h5 {
+                    z-index: 2;
+                    color: $text-color;
+                    font-size: 24px;
+                    font-weight: bold;
+                
+            } /* h5 */
+        }      
+        
+        .gallery-user-description {
+               display: block; 
+               color: $text-color;
+               font-size: 14px;
+               font-weight: normal;
+                
+            }
+            
+        .gallery-user-details {
+               display: block; 
+                color: $text-color;
+               font-size: 14px;
+               font-weight: normal;
+                
+                
+        }
+    }  /* gallery wrapper */    
+    
+    
+        .gallery-user-dimmer {
+                display: none;
+                z-index: 1;
+                height: 90px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0 auto;
+                background: rgba(76,76,76,0);
+                background: -moz-linear-gradient(top, rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(97,97,97,0) 21%, rgba(102,102,102,0.06) 26%, rgba(71,71,71,0.14) 32%, rgba(0,0,0,0.25) 41%, rgba(17,17,17,0.48) 59%, rgba(43,43,43,0.7) 76%, rgba(28,28,28,0.89) 91%, rgba(19,19,19,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,0)), color-stop(12%, rgba(89,89,89,0)), color-stop(21%, rgba(97,97,97,0)), color-stop(26%, rgba(102,102,102,0.06)), color-stop(32%, rgba(71,71,71,0.14)), color-stop(41%, rgba(0,0,0,0.25)), color-stop(59%, rgba(17,17,17,0.48)), color-stop(76%, rgba(43,43,43,0.7)), color-stop(91%, rgba(28,28,28,0.89)), color-stop(100%, rgba(19,19,19,1)));
+                background: -webkit-linear-gradient(top, rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(97,97,97,0) 21%, rgba(102,102,102,0.06) 26%, rgba(71,71,71,0.14) 32%, rgba(0,0,0,0.25) 41%, rgba(17,17,17,0.48) 59%, rgba(43,43,43,0.7) 76%, rgba(28,28,28,0.89) 91%, rgba(19,19,19,1) 100%);
+                background: -o-linear-gradient(top, rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(97,97,97,0) 21%, rgba(102,102,102,0.06) 26%, rgba(71,71,71,0.14) 32%, rgba(0,0,0,0.25) 41%, rgba(17,17,17,0.48) 59%, rgba(43,43,43,0.7) 76%, rgba(28,28,28,0.89) 91%, rgba(19,19,19,1) 100%);
+                background: -ms-linear-gradient(top, rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(97,97,97,0) 21%, rgba(102,102,102,0.06) 26%, rgba(71,71,71,0.14) 32%, rgba(0,0,0,0.25) 41%, rgba(17,17,17,0.48) 59%, rgba(43,43,43,0.7) 76%, rgba(28,28,28,0.89) 91%, rgba(19,19,19,1) 100%);
+                background: linear-gradient(to bottom, rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(97,97,97,0) 21%, rgba(102,102,102,0.06) 26%, rgba(71,71,71,0.14) 32%, rgba(0,0,0,0.25) 41%, rgba(17,17,17,0.48) 59%, rgba(43,43,43,0.7) 76%, rgba(28,28,28,0.89) 91%, rgba(19,19,19,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+                /* IE6-9 */
+
+            }
+    
+    .gallery-gap {
+        display: inline-block;
+        
+        .bar {
+            display: inline-block;
+            border: 1px solid #846813;
+            width: 380px;
+            height: 0.5px;
+            margin-top: 5px;
+        }
+    
+        .arrow-down, .arrow-down-text {
+            display: inline-block;
+            font-size: 11px;
+            color: $text-color;
+            text-transform: uppercase;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    
+        .arrow-up, .arrow-up-text {
+            display: none;
+            font-size: 11px;
+            color: $text-color;
+            text-transform: uppercase;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    
+    
+    /* USER PHOTOS */
+    
+        .user-1 {
+            background-image: url(#{$images-path}/parker_schnabel.jpg); 
+            background-repeat: no-repeat;
+            background-position: -160px; 
+        }
+        .user-2 {
+            background-image: url(#{$images-path}/todd_hoffman.jpg); 
+            background-repeat: no-repeat;
+            background-position: -160px; 
+        }
+        .user-3 {
+            background-image: url(#{$images-path}/tony_beets.jpg); 
+            background-repeat: no-repeat;
+            background-position: -260px -40px; 
+        }
+        .user-4 {
+            background-image: url(#{$images-path}/jack_hoffman.jpg); 
+            background-repeat: no-repeat;
+            background-position: -320px 5px; 
+        }
+        .user-5 {
+            background-image: url(#{$images-path}/minnie_beets.jpg); 
+            background-repeat: no-repeat;
+            background-position: -100px -30px; 
+        }
+        .user-6 {
+            background-image: url(#{$images-path}/monica_beets.jpg); 
+            background-repeat: no-repeat;
+            background-position: -60px 10px; 
+
+        }
+        .user-7 {
+            background-image: url(#{$images-path}/kevin_beets.jpg); 
+            background-repeat: no-repeat;
+            background-position: -50px 10px; 
+        }
+        .user-8 {
+            background-image: url(#{$images-path}/john_schnabel.jpg); 
+            background-repeat: no-repeat;
+            background-position: -130px 20px; 
+        }
+        .user-9 {
+            background-image: url(#{$images-path}/dave_turin.jpg); 
+            background-repeat: no-repeat;
+            background-position: -60px; 
+        }
+        .user-10 {
+            background-image: url(#{$images-path}/gene_cheeseman.jpg); 
+            background-repeat: no-repeat;
+            background-position: -120px -10px;
+        }
+        .user-11 {
+            background-image: url(#{$images-path}/jim_thurber.jpg); 
+            background-repeat: no-repeat;
+            background-position: -60px; 
+        }
+        .user-12 {
+            background-image: url(#{$images-path}/andy_spinks.jpg); 
+            background-repeat: no-repeat;
+            background-position: -120px; 
+        }
+        .user-13 {
+            background-image: url(#{$images-path}/chris_doumit.jpg); 
+            background-repeat: no-repeat;
+            background-position: -400px -10px; 
+        }
+        .user-14 {
+            background-image: url(#{$images-path}/logan_pierce.jpg); 
+            background-repeat: no-repeat;
+            background-position: -190px -60px; 
+        }
+        .user-15 {
+            background-image: url(#{$images-path}/rick_ness.jpg); 
+            background-repeat: no-repeat;
+            background-position: -40px -90px; 
+        }
+        .user-16 {
+            background-image: url(#{$images-path}/kevin_hiatt.jpg); 
+            background-repeat: no-repeat;
+            background-position: -20px; 
+        }
+        .user-17 {
+            background-image: url(#{$images-path}/freddy_dodge.jpg); 
+            background-repeat: no-repeat;
+            background-position: -150px; 
+        }
+        .user-18 {
+            background-image: url(#{$images-path}/mitch_blaschke.jpg); 
+            background-repeat: no-repeat;
+            background-position: -90px; 
+        }
+        .user-19 {
+            background-image: url(#{$images-path}/mike_krisher.jpg); 
+            background-repeat: no-repeat;
+            background-position: -60px; 
+        }
+        .user-20 {
+            background-image: url(#{$images-path}/jerry_rhodes.jpg); 
+            background-repeat: no-repeat;
+            background-position: 0px; 
+        }
+        
+        
+
+    
+} /* slider */
+
+
+/* FOOTER */
+
+footer {
+    
+    .footer-main {
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+}
+    
+} /* end of  (min-width: 480px) and (max-width: 799px)  */
+

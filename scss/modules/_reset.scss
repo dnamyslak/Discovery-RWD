@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('../fonts/RobotoCondensed-Regular.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('../fonts/RobotoCondensed-Bold.eot');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+html, body {
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-content: center;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
